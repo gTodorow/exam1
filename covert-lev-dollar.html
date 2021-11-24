@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert levas into dollars</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+</body>
+
+<script>
+    let myMoney = prompt("Колко пари искате да конвертирате?: ");
+    let lev = parseInt(myMoney);
+
+    let dollar = lev * 0.59;
+    console.log(dollar.toFixed(2));
+
+    document.getElementById("demo").innerHTML =
+        "Парите ви в долари са: " + dollar;
+</script>
+
+</html>
